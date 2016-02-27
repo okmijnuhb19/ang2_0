@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Andrew\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '–g',
+1 verbose cli   'tsd' ]
+2 info using npm@3.7.5
+3 info using node@v5.7.0
+4 verbose config Skipping project config: C:\Users\Andrew/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData –g
+9 silly fetchPackageMetaData tsd
+10 silly fetchOtherPackageData –g
+11 silly cache add args [ '–g', null ]
+12 verbose cache add spec –g
+13 silly fetchNamedPackageData tsd
+14 silly mapToRegistry name tsd
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/tsd
+18 silly cache add parsed spec Result {
+18 silly cache add   raw: '–g',
+18 silly cache add   scope: null,
+18 silly cache add   name: null,
+18 silly cache add   rawSpec: '–g',
+18 silly cache add   spec: 'C:\\Users\\Andrew\\Documents\\Visual Studio 2015\\Projects\\ang2_0\\ang2_0\\–g',
+18 silly cache add   type: 'local' }
+19 error addLocal Could not install C:\Users\Andrew\Documents\Visual Studio 2015\Projects\ang2_0\ang2_0\–g
+20 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open 'C:\Users\Andrew\Documents\Visual Studio 2015\Projects\ang2_0\ang2_0\–g'
+20 silly fetchPackageMetaData     at Error (native)
+20 silly fetchPackageMetaData  error for –g { [Error: ENOENT: no such file or directory, open 'C:\Users\Andrew\Documents\Visual Studio 2015\Projects\ang2_0\ang2_0\–g']
+20 silly fetchPackageMetaData   errno: -4058,
+20 silly fetchPackageMetaData   code: 'ENOENT',
+20 silly fetchPackageMetaData   syscall: 'open',
+20 silly fetchPackageMetaData   path: 'C:\\Users\\Andrew\\Documents\\Visual Studio 2015\\Projects\\ang2_0\\ang2_0\\–g' }
+21 verbose request uri https://registry.npmjs.org/tsd
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 22:37:13
+24 verbose request id 3e3e66f9a522acc9
+25 verbose etag "1PGPRMA10C9LM850CARE8BZYX"
+26 http request GET https://registry.npmjs.org/tsd
+27 verbose stack TypeError: The header content contains invalid characters
+27 verbose stack     at ClientRequest.OutgoingMessage.setHeader (_http_outgoing.js:348:11)
+27 verbose stack     at new ClientRequest (_http_client.js:85:14)
+27 verbose stack     at Object.exports.request (http.js:31:10)
+27 verbose stack     at Object.exports.request (https.js:197:15)
+27 verbose stack     at Request.start (C:\Users\Andrew\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:747:30)
+27 verbose stack     at Request.end (C:\Users\Andrew\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1381:10)
+27 verbose stack     at end (C:\Users\Andrew\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:575:14)
+27 verbose stack     at Immediate._onImmediate (C:\Users\Andrew\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:589:7)
+27 verbose stack     at processImmediate [as _immediateCallback] (timers.js:383:17)
+28 verbose cwd C:\Users\Andrew\Documents\Visual Studio 2015\Projects\ang2_0\ang2_0
+29 error Windows_NT 6.2.9200
+30 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Andrew\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "–g" "tsd"
+31 error node v5.7.0
+32 error npm  v3.7.5
+33 error The header content contains invalid characters
+34 error If you need help, you may report this error at:
+34 error     <https://github.com/npm/npm/issues>
+35 verbose exit [ 1, true ]
